@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+data/*.db
+data/*.db-*
+media/
+.env
+.env.local
+*.log
+test-results/
+playwright-report/
+.DS_Store
+tsconfig.tsbuildinfo
+next-env.d.ts
+backups/
+
+# Fichiers de travail local (ne pas publier)
+claude/
+.claude/
+CLAUDE.md
+AGENTS.md
+PROMPT_DEMARRAGE.md

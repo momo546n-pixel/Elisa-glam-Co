@@ -1,0 +1,49 @@
+{
+  "name": "elisaglam-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "node --no-deprecation node_modules/next/dist/bin/next dev -p 3010",
+    "build": "node --no-deprecation node_modules/next/dist/bin/next build",
+    "start": "node --no-deprecation node_modules/next/dist/bin/next start -p 3010",
+    "payload": "node --no-deprecation node_modules/payload/bin.js",
+    "generate:importmap": "node --no-deprecation node_modules/payload/bin.js generate:importmap",
+    "generate:types": "node --no-deprecation node_modules/payload/bin.js generate:types",
+    "seed": "node --no-deprecation node_modules/payload/bin.js run scripts/seed.ts",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "test:e2e": "node node_modules/@playwright/test/cli.js test",
+    "backup": "node scripts/backup.mjs"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "3.91.0",
+    "@payloadcms/db-sqlite": "3.91.0",
+    "@payloadcms/next": "3.91.0",
+    "@payloadcms/richtext-lexical": "3.91.0",
+    "@payloadcms/storage-s3": "3.91.0",
+    "@payloadcms/translations": "3.91.0",
+    "@payloadcms/ui": "3.91.0",
+    "graphql": "^16.8.1",
+    "next": "16.4.2",
+    "payload": "3.91.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "sharp": "0.34.2",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "embedded-postgres": "^18.4.0-beta.17",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "5.7.3"
+  }
+}
